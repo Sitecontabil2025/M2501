@@ -1,0 +1,73 @@
+.container{
+    &-topo{
+        background: linear-gradient(135deg, darken($primary, 15%), darken($primary, 10%), darken($primary, 5%), $primary);
+    }
+    &-banner {
+        background-image: url(#{$urlImg}banner.jpg);
+        background-position: center;
+        min-height: 700px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            opacity: .6;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &-utilitarios{
+        transform: translateY(-100px);
+    }
+    &-abas{
+        background-image: url(#{$urlImg}sobre-nos.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            opacity: .6;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &-pages{
+        .nav-link{
+            color: var(--bs-black);
+            &.dropdown-toggle {
+                    &:focus,
+                    &.show {
+                        color: var(--bs-dark);
+                    }
+                }
+        }
+        .img-logo{
+            filter: invert(100);
+        }
+        
+    }
+}
+.linha {
+    width: 60px;
+    height: 4px;
+    background-color: var(--bs-primary);
+    border-radius: 2px;
+}
+#sclgpdNotice{
+    z-index: 999;
+}

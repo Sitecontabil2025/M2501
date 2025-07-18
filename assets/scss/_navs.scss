@@ -1,0 +1,22 @@
+.nav {
+    &-link {
+        color: var(--bs-white);
+        &:hover {
+            color: var(--bs-secondary);
+        }
+        &.dropdown-toggle {
+            &:focus,
+            &.show {
+                color: var(--bs-white);
+            }
+        }
+    }
+    &-footer{
+        li{
+            margin-bottom: 5px;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}

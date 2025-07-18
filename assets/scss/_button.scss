@@ -1,0 +1,17 @@
+.accordion{
+    &-button {
+        &:not(.collapsed) {
+            color: var(--bs-primary);
+            background-color: var(--bs-white);
+        }
+        color: var(--bs-dark);
+        background-color: var(--bs-white);
+        border-radius: 8px !important;
+    }
+    &-item {
+        border: none;
+        margin-bottom: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        border-radius: 6px;
+    }
+}
